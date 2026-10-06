@@ -1,0 +1,46 @@
+# 本地开发配置模板
+# 使用方法：复制本文件为 application-dev.yml（该文件已被 .gitignore 忽略，不会提交），
+# 然后把下面的占位符替换成你自己的真实值。
+
+teasmile:
+  datasource:
+    host: 127.0.0.1
+    port: 3306
+    database: teasmile
+    username: root
+    password: your_db_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    database: 0
+
+  # JWT 签名密钥（本地可随意填，生产环境请用高强度随机串）
+  jwt:
+    admin-secret-key: your_admin_jwt_secret
+    user-secret-key: your_user_jwt_secret
+
+  alioss:
+    endpoint: oss-cn-hangzhou.aliyuncs.com
+    access-key-id: your_aliyun_ak
+    access-key-secret: your_aliyun_sk
+    bucket-name: your_bucket_name
+
+  wechat:
+    appid: your_wechat_appid
+    secret: your_wechat_appsecret
+    mchid: your_mchid
+    mchSerialNo: your_mch_serial_no
+    privateKeyFilePath: /path/to/your/private.key
+    apiV3Key: your_apiv3_key
+    weChatPayCertFilePath: /path/to/your/cert.pem
+    notifyUrl: http://127.0.0.1:8080/notify/paySuccess
+    refundNotifyUrl: http://127.0.0.1:8080/notify/refundNotify
+
+  shop:
+    address: 你的门店地址
+
+  baidu:
+    ak: your_baidu_map_ak

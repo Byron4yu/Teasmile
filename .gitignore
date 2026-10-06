@@ -1,0 +1,30 @@
+# ===== 构建产物（不要提交）=====
+**/target/
+**/unpackage/
+**/dist/
+**/build/
+**/out/
+
+# ===== 依赖 =====
+node_modules/
+
+# ===== IDE / 编辑器 =====
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.swp
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+
+# ===== 日志 =====
+*.log
+logs/
+
+# ===== 本地私密配置（本地保留真实值，禁止提交）=====
+**/application-dev.yml
+**/application-local.yml
+**/application-prod.yml
